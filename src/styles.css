@@ -1,0 +1,400 @@
+.post-1 {
+    background: #B71757;
+}
+
+.post-2 {
+    background: #0D7E71;
+}
+
+.post-3 {
+    background: #b1660e;
+}
+
+.post-4 {
+    background: #d12767;
+}
+
+.post-5 {
+    background: #2d95bb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto;
+    background-color: #0b192f;
+    font-weight: 100;
+}
+
+.main-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 15vh;
+    background-color: #162b4d;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    width: 25%;
+    height: 100%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 4.0vw;
+}
+
+.logo-text-color {
+    color: #d12767;
+}
+
+.header-navigation {
+    width: 50%;
+    height: 100%;
+    margin-left: 22%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.0vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.0vw;
+}
+
+.header-navigation a:hover {
+    cursor: pointer;
+    background-color: #283d5f;
+}
+
+.toggle {
+    display: none;
+}
+
+.main {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-container {
+    width: 70%;
+    color: #ffffff;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.article-container:nth-child(even) .article-text {
+    flex-direction: row-reverse;
+}
+
+.article-container:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.article-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.article-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.article-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-description {
+    width: 80%;
+}
+
+.article-description h2 {
+    font-size: 3.4vw;
+    font-weight: 100;
+    margin: 1.2vw;
+}
+
+.article-description p {
+    font-size: 1.08vw;
+    margin: 1.3vw;
+    filter: opacity(40%);
+}
+
+.article-date {
+    width: 20%;
+    filter: opacity(40%);
+}
+
+.article-date p:first-child {
+    font-size: 4.4vw;
+    margin-top: 1.3vw;
+}
+
+.article-date:nth-child(2) {
+    font-size: 2.4vw;
+}
+
+.article-image img:hover,
+.article-text:hover {
+    filter: opacity(50%);
+}
+
+.post-5 .article-text {
+    width: 100%;
+}
+
+.post-5 .article-date p {
+    margin-left: 5.5vw;
+    margin-top: 0.7vw;
+}
+
+.post-5 .article-description {
+    margin-top: 20px;
+}
+
+.aside-main-container {
+    width: 28%;
+    cursor: pointer;
+
+}
+
+.aside-article-container {
+    background: #ffffff;
+    color: #000000;
+    margin-bottom: 2.5vh;
+}
+
+.aside-text {
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.09vw;
+}
+
+.aside-text h4 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 2.4vw;
+}
+
+.aside-image img {
+    width: 100%;
+}
+
+footer {
+    margin: 0 0 10px 0;
+    background: #162b4d;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    padding: 20px;
+    color: #ffffff;
+    filter: opacity(50%);
+    font-size: 1.09vw;
+}
+
+@media screen and (max-width: 768px) {
+    .main-wrapper {
+        width: 95%;
+    }
+
+    .header {
+        height: 17vh;
+        flex-direction: column-reverse;
+    }
+
+    .toggle {
+        display: block;
+        margin-top: 2.5vh;
+    }
+
+    .header-navigation a {
+        display: none;
+    }
+
+    .header-navigation,
+    .header-logo {
+        height: 30%;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo {
+        height: 70%;
+    }
+
+    .blog-container {
+        width: 58%;
+    }
+
+    .article-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .article-container:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .article-image {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .article-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .article-text {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .article-description,
+    .article-date {
+        width: 100%;
+    }
+
+    .article-date {
+        text-align: center;
+    }
+
+    .article-date p:first-child {
+        font-size: 5.9vw;
+        margin-top: 10px;
+    }
+
+    .article-description h2 {
+        font-size: 5.9vw;
+        font-weight: 100;
+        margin: 15px;
+    }
+
+    .article-description p {
+        font-size: 2.5vw;
+        margin: 15px;
+        filter: opacity(40%);
+    }
+
+    .article-date:nth-child(2) {
+        font-size: 3.9vw;
+    }
+
+    .post-5 .article-date p {
+        margin: 0;
+    }
+
+    .aside-main-container {
+        width: 39%;
+    }
+
+    .aside-text {
+        font-size: 2.0vw;
+    }
+
+    .aside-text h4 {
+        font-size: 3.4vw;
+    }
+
+    footer {
+        margin: 0 0 10px 0;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    footer p {
+        padding: 0;
+        font-size: 2.5vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 14vh;
+    }
+
+    .header-logo {
+        font-size: 7.0vw;
+    }
+
+    .blog-container {
+        width: 100%;
+    }
+
+    .article-date {
+        margin-bottom: 15px;
+    }
+
+    .article-date p:first-child {
+        font-size: 8.9vw;
+    }
+
+    .article-description h2 {
+        font-size: 8.9vw;
+        margin: 20px;
+    }
+
+    .article-description p {
+        font-size: 3.3vw;
+        margin: 20px;
+    }
+
+    .article-date:nth-child(2) {
+        font-size: 5.9vw;
+    }
+
+    .aside-main-container {
+        width: 100%;
+    }
+
+    .aside-text h4 {
+        font-size: 5.0vw;
+    }
+
+    footer p,
+    .aside-text {
+        font-size: 3.3vw;
+    }
+}
